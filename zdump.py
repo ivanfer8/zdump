@@ -34,6 +34,7 @@ def list_interfaces():
         iface_name = iface.name
         friendly_name = None
         
+        
         for adapter in adapters:
             if adapter.nice_name == iface_name or adapter.ips:
                 friendly_name = adapter.nice_name
