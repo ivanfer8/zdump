@@ -33,6 +33,7 @@ def list_interfaces():
     for idx, iface in enumerate(scapy_interfaces):
         iface_name = iface.name
         friendly_name = None
+        
 
         for adapter in adapters:
             if adapter.nice_name == iface_name or adapter.ips:
